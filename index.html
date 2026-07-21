@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilge [Soyad] — Yazılım Geliştirici</title>
+<meta name="description" content="Bilge [Soyad] — full-stack geliştirici ve makine öğrenmesi meraklısı. Portfolyo ve seçilmiş projeler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="aurora-canvas"></canvas>
+
+<nav id="nav">
+  <a href="#top" class="logo"><span class="logo-dot"></span>BS</a>
+  <div class="nav-links">
+    <a href="#about">Hakkımda</a>
+    <a href="#stack">Teknolojiler</a>
+    <a href="#work">Projeler</a>
+    <a href="#experience">Deneyim</a>
+    <a href="#contact">İletişim</a>
+  </div>
+  <button id="langToggle" type="button" aria-label="Dili değiştir">🌐 <span>TR</span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="top">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="rule"></span> YAZILIM GELİŞTİRİCİ — İSTANBUL</p>
+    <h1 class="hero-title">Bilge<br><span class="accent">[Soyad]</span><span class="cursor-blink"></span></h1>
+    <p class="hero-tagline">Fikirleri çalışan yazılıma dönüştürüyorum.</p>
+    <p class="hero-desc">Full-stack geliştirme ve makine öğrenmesi üzerine çalışıyorum. Aşağıda seçilmiş projelerimi, kullandığım teknolojileri ve yolculuğumu bulabilirsin.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">Projelere göz at →</a>
+      <a href="#" class="btn btn-secondary">Özgeçmiş (CV) ⬇</a>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>SCROLL</span><span class="line"></span></div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow">Hakkımda</p>
+    <div class="about-grid">
+      <div>
+        <h2 class="about-title">[Kısa bir cümleyle kim olduğun — örn. "İstanbul merkezli, veri ve arayüz arasında geziniyorum."]</h2>
+        <div class="about-body">
+          <p>[Buraya kısa bir giriş paragrafı: kim olduğun, ne okuduğun/okuyor olduğun, hangi alanlara ilgi duyduğun. 2-3 cümle, gerçek sesinle — jenerik LinkedIn diline kaçmadan.]</p>
+          <p>[İkinci paragraf: şu an ne üzerinde çalışıyorsun, hangi problemler ilgini çekiyor, iş başvurusunda vurgulamak istediğin yön ne (örn. ML, web, oyun geliştirme).]</p>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="k">Konum</div><div class="v">İstanbul, Türkiye</div></div>
+        <div class="stat-cell"><div class="k">Odak</div><div class="v">Full-Stack & ML</div></div>
+        <div class="stat-cell"><div class="k">Eğitim</div><div class="v">[Okul / Bölüm]</div></div>
+        <div class="stat-cell"><div class="k">Durum</div><div class="v">İş fırsatlarına açık</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section class="section" id="stack" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center">Teknolojiler</p>
+    <h2 class="stack-title">TECH STACK</h2>
+    <div class="techstack-pyramid">
+      <div class="techstack-row">
+        <a href="https://python.org" target="_blank" rel="noopener" class="techstack-item" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="techstack-item" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></a>
+        <a href="https://typescriptlang.org" target="_blank" rel="noopener" class="techstack-item" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></a>
+        <a href="https://en.cppreference.com/w/c" target="_blank" rel="noopener" class="techstack-item" title="C"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></a>
+        <a href="https://isocpp.org" target="_blank" rel="noopener" class="techstack-item" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></a>
+        <a href="https://kotlinlang.org" target="_blank" rel="noopener" class="techstack-item" title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><span>Kotlin</span></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" class="techstack-item" title="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" class="techstack-item" title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></a>
+        <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener" class="techstack-item" title="Bash"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><span>Bash</span></a>
+        <a href="https://react.dev" target="_blank" rel="noopener" class="techstack-item" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></a>
+        <a href="https://nextjs.org" target="_blank" rel="noopener" class="techstack-item" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></a>
+        <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="techstack-item" title="Bootstrap"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></a>
+      </div>
+      <div class="techstack-row">
+        <a href="https://nodejs.org" target="_blank" rel="noopener" class="techstack-item" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></a>
+        <a href="https://djangoproject.com" target="_blank" rel="noopener" class="techstack-item" title="Django"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"><span>Django</span></a>
+        <a href="https://flask.palletsprojects.com" target="_blank" rel="noopener" class="techstack-item" title="Flask"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></a>
+        <a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener" class="techstack-item" title="FastAPI"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></a>
+        <a href="https://tensorflow.org" target="_blank" rel="noopener" class="techstack-item" title="TensorFlow"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span>TensorFlow</span></a>
+        <a href="https://pytorch.org" target="_blank" rel="noopener" class="techstack-item" title="PyTorch"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></a>
+        <a href="https://scikit-learn.org" target="_blank" rel="noopener" class="techstack-item" title="Scikit-learn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"><span>Scikit-learn</span></a>
+        <a href="https://opencv.org" target="_blank" rel="noopener" class="techstack-item" title="OpenCV"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"><span>OpenCV</span></a>
+        <a href="https://numpy.org" target="_blank" rel="noopener" class="techstack-item" title="NumPy"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"><span>NumPy</span></a>
+        <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="techstack-item" title="Tailwind"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"><span>Tailwind</span></a>
+      </div>
+      <div class="techstack-row">
+        <a href="https://pandas.pydata.org" target="_blank" rel="noopener" class="techstack-item" title="Pandas"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></a>
+        <a href="https://mysql.com" target="_blank" rel="noopener" class="techstack-item" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></a>
+        <a href="https://postgresql.org" target="_blank" rel="noopener" class="techstack-item" title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></a>
+        <a href="https://mongodb.com" target="_blank" rel="noopener" class="techstack-item" title="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></a>
+        <a href="https://firebase.google.com" target="_blank" rel="noopener" class="techstack-item" title="Firebase"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></a>
+        <a href="https://redis.io" target="_blank" rel="noopener" class="techstack-item" title="Redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"><span>Redis</span></a>
+        <a href="https://docker.com" target="_blank" rel="noopener" class="techstack-item" title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></a>
+        <a href="https://azure.microsoft.com" target="_blank" rel="noopener" class="techstack-item" title="Azure"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></a>
+      </div>
+      <div class="techstack-row">
+        <a href="https://git-scm.com" target="_blank" rel="noopener" class="techstack-item" title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="techstack-item" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></a>
+        <a href="https://linux.org" target="_blank" rel="noopener" class="techstack-item" title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></a>
+        <a href="https://aws.amazon.com" target="_blank" rel="noopener" class="techstack-item" title="AWS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"><span>AWS</span></a>
+        <a href="https://code.visualstudio.com" target="_blank" rel="noopener" class="techstack-item" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></a>
+        <a href="https://vercel.com" target="_blank" rel="noopener" class="techstack-item" title="Vercel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"><span>Vercel</span></a>
+      </div>
+      <div class="techstack-row">
+        <a href="https://jupyter.org" target="_blank" rel="noopener" class="techstack-item" title="Jupyter"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"><span>Jupyter</span></a>
+        <a href="https://figma.com" target="_blank" rel="noopener" class="techstack-item" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></a>
+        <a href="https://postman.com" target="_blank" rel="noopener" class="techstack-item" title="Postman"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></a>
+        <a href="https://adobe.com/products/photoshop" target="_blank" rel="noopener" class="techstack-item" title="Photoshop"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop"><span>Photoshop</span></a>
+      </div>
+      <div class="techstack-row">
+        <a href="https://huggingface.co" target="_blank" rel="noopener" class="techstack-item" title="Hugging Face"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face"><span>Hugging Face</span></a>
+        <a href="https://www.microsoft.com/microsoft-365" target="_blank" rel="noopener" class="techstack-item" title="MS Office"><img src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="MS Office"><span>MS Office</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow">Seçilmiş Projeler</p>
+    <div class="work-list">
+
+      <div class="work-card"
+           data-title="[Proje Adı 1]"
+           data-meta="2025 — Web / ML"
+           data-overview="[Projenin ne olduğuna dair 3-4 cümlelik genel bakış: hangi problemi çözüyor, kimin için, neden yaptın.]"
+           data-role="[Bu projede rolün neydi — solo mu, takımda mı, hangi kısımları sen yaptın.]"
+           data-stack="[Kullandığın teknolojiler, kısa liste.]"
+           data-outcome="[Sonuç / öğrendiklerin / metrikler varsa — örn. kullanıcı sayısı, performans kazancı, yarışma sonucu.]"
+           data-link="#"
+           data-images="placeholder|placeholder|placeholder">
+        <div class="work-card-top">
+          <h3 class="work-card-title">[Proje Adı 1]</h3>
+          <span class="work-card-meta">2025 — Web / ML</span>
+        </div>
+        <p class="work-card-desc">[Tek cümlelik özet — kart görünümünde okunacak kısa açıklama.]</p>
+        <div class="work-tags">
+          <span class="work-tag">Python</span>
+          <span class="work-tag">React</span>
+          <span class="work-tag">PostgreSQL</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+
+      <div class="work-card"
+           data-title="[Proje Adı 2]"
+           data-meta="2024 — Mobil"
+           data-overview="[Genel bakış metni buraya gelecek.]"
+           data-role="[Rol açıklaması.]"
+           data-stack="[Teknoloji listesi.]"
+           data-outcome="[Sonuç/öğrenim.]"
+           data-link="#"
+           data-images="placeholder|placeholder">
+        <div class="work-card-top">
+          <h3 class="work-card-title">[Proje Adı 2]</h3>
+          <span class="work-card-meta">2024 — Mobil</span>
+        </div>
+        <p class="work-card-desc">[Tek cümlelik özet.]</p>
+        <div class="work-tags">
+          <span class="work-tag">Kotlin</span>
+          <span class="work-tag">Firebase</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK MODAL ============ -->
+<div class="work-modal-overlay" id="workModalOverlay">
+  <div class="work-modal">
+    <div class="work-modal-head">
+      <button class="work-modal-close" type="button" aria-label="Kapat">✕</button>
+      <h3 class="wm-title" style="font-size:clamp(1.6rem,3vw,2.2rem)"></h3>
+      <p class="wm-meta" style="color:var(--faint);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;margin-top:6px"></p>
+    </div>
+    <div class="work-gallery">
+      <div class="work-gallery-track"></div>
+      <button class="gallery-nav prev" type="button" aria-label="Önceki">←</button>
+      <button class="gallery-nav next" type="button" aria-label="Sonraki">→</button>
+    </div>
+    <div class="gallery-dots" style="margin-inline:clamp(24px,4vw,40px)"></div>
+
+    <div class="work-tabs">
+      <button class="work-tab-btn active" type="button">Genel Bakış</button>
+      <button class="work-tab-btn" type="button">Rol & Teknoloji</button>
+      <button class="work-tab-btn" type="button">Sonuç</button>
+    </div>
+    <div class="work-tab-panel active">
+      <h4>Genel Bakış</h4>
+      <p class="wm-overview"></p>
+      <a href="#" class="btn btn-primary wm-link" target="_blank" rel="noopener">Canlı projeyi gör →</a>
+    </div>
+    <div class="work-tab-panel">
+      <h4>Rol</h4>
+      <p class="wm-role"></p>
+      <h4>Teknolojiler</h4>
+      <p class="wm-stack"></p>
+    </div>
+    <div class="work-tab-panel">
+      <h4>Sonuç & Öğrenimler</h4>
+      <p class="wm-outcome"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow">Yolculuk</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-num">01 — 2024–halen</p>
+        <h3 class="timeline-title">[Pozisyon / Program]</h3>
+        <p class="timeline-org">[Kurum adı]</p>
+        <p class="timeline-desc">[Kısa açıklama — ne yaptın, ne öğrendin, hangi projelerde yer aldın.]</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-num">02 — 2023</p>
+        <h3 class="timeline-title">[Pozisyon / Program]</h3>
+        <p class="timeline-org">[Kurum adı]</p>
+        <p class="timeline-desc">[Kısa açıklama.]</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <p class="timeline-num">03 — 2022</p>
+        <h3 class="timeline-title">[Pozisyon / Program]</h3>
+        <p class="timeline-org">[Kurum adı]</p>
+        <p class="timeline-desc">[Kısa açıklama.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" data-reveal>
+  <div class="wrap contact-inner">
+    <p class="eyebrow">İletişim</p>
+    <h2 class="contact-title">Birlikte bir şey<br>inşa edelim mi?</h2>
+    <p class="local-time"><span class="dot"></span><span id="localTime">—</span></p>
+    <div class="hero-actions">
+      <a href="mailto:[email adresin]" class="btn btn-primary">E-posta gönder →</a>
+      <div class="social-row">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Bilge [Soyad]</span>
+  <span>Tasarım & geliştirme: Bilge [Soyad]</span>
+</footer>
+
+<script src="js/background.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
