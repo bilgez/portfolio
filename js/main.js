@@ -21,9 +21,12 @@ const timeEl = document.getElementById('localTime');
 function updateTime() {
   if (!timeEl) return;
   const now = new Date();
-  const hh = String(now.getHours()).padStart(2, '0');
-  const mm = String(now.getMinutes()).padStart(2, '0');
-  timeEl.textContent = `${hh}:${mm} — İstanbul`;
+  const parts = new Intl.DateTimeFormat('tr-TR', {
+    hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Istanbul'
+  }).formatToParts(now);
+  const hh = parts.find(p => p.type === 'hour').value;
+  const mm = parts.find(p => p.type === 'minute').value;
+  timeEl.textContent = `${hh}:${mm} — Antalya`;
 }
 updateTime();
 setInterval(updateTime, 1000 * 15);
