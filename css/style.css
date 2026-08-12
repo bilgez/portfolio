@@ -176,8 +176,8 @@ header#top{
 .techstack-item{
   position:relative;display:flex;align-items:center;justify-content:center;
   width:66px;height:66px;border-radius:16px;text-decoration:none;color:var(--ink);
-  background:rgba(255,255,255,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  border:1px solid rgba(255,255,255,.5);
+  background:rgba(255,255,255,.2);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.35);
   box-shadow:0 4px 14px -8px rgba(90,60,110,.18);
   transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .35s,background .35s;
 }
@@ -233,6 +233,7 @@ header#top{
 .work-gallery-track{display:flex;height:100%;transition:transform .45s var(--ease)}
 .work-gallery-slide{min-width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:.78rem;letter-spacing:.08em}
 .work-gallery-slide img{width:100%;height:100%;object-fit:cover}
+.work-gallery-slide video{width:100%;height:100%;object-fit:contain;background:#000}
 .gallery-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.75);border:none;width:38px;height:38px;border-radius:999px;cursor:pointer;font-size:.9rem}
 .gallery-nav.prev{left:14px}.gallery-nav.next{right:14px}
 .gallery-dots{display:flex;gap:6px;justify-content:center;margin-top:12px}

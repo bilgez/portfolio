@@ -51,7 +51,7 @@
         <h2 class="about-title">Merhaba, ben Bilge Zerda.</h2>
         <div class="about-body">
           <p>Türk Hava Kurumu Üniversitesi'nde %100 İngilizce Yazılım Mühendisliği bölümünden Temmuz 2026'da mezun oldum. Okul projelerinde ve üniversitede araştırma görevlisi asistanlığı yaptığım dönemlerde hem frontend hem backend tarafında yer aldım.</p>
-          <p>Bitirme projem TravelMind'ı backend'den frontend'e kadar kendim geliştirdim; NLP tabanlı bir sistem olduğu için makine öğrenmesi tarafında da yer aldım. Bunun dışında Unity ile oyun geliştirme denemelerim ve Teknofest Orta İrtifa Roket Yarışması'nda takım deneyimim var. Siber güvenlik de ilgimi çeken bir alan fakat pratik deneyimim sınırlı.</p>
+          <p>Bitirme projem TravelMind'ı bir ekip arkadaşımla geliştirdim; backend, frontend ve veri tarafında yer aldım. Bunun dışında Unity ile oyun geliştirme denemelerim ve Teknofest Orta İrtifa Roket Yarışması'nda takım deneyimim var. Siber güvenlik de ilgimi çeken bir alan; okulda bir dersini aldım ama henüz pratik deneyimim sınırlı.</p>
         </div>
       </div>
       <div class="stat-grid">
@@ -136,68 +136,182 @@
 
       <div class="work-card"
            data-title="TravelMind"
-           data-meta="2026 — Bitirme Projesi / Full-Stack"
-           data-overview="NLP tabanlı akıllı seyahat planlama sistemi. Kullanıcıların doğal dille ifade ettiği seyahat isteklerini anlayıp buna uygun gezi planları öneren bir sistem olarak tasarladım. Bitirme projem olarak backend'den frontend'e kadar tüm sistemi kendim kurdum."
-           data-role="Projeyi baştan sona kendim geliştirdim — backend, frontend ve veritabanı tasarımı dahil, solo bir bitirme projesi."
-           data-stack="Backend: FastAPI, PostgreSQL, SQLAlchemy, JWT, Docker, pytest. Frontend: React (Vite), Tailwind CSS."
-           data-outcome="JWT tabanlı kimlik doğrulama ve REST API tasarımı ile birlikte, gerçek bir ürünün uçtan uca nasıl kurulduğunu ilk kez deneyimledim — henüz canlıya alma/link ekleme aşamasındayım."
-           data-link=""
-           data-images="placeholder|placeholder|placeholder">
+           data-meta="2026 — Bitirme Projesi (Ekip) / Full-Stack"
+           data-overview="Kullanıcının doğal dilde yazdığı tek bir cümleye göre (bütçe, gün sayısı, ilgi alanları) kişiselleştirilmiş bir Antalya gezi planı oluşturan, yapay zeka destekli bir seyahat planlayıcı. Ekip arkadaşımla birlikte geliştirdiğimiz bitirme projemiz."
+           data-role="Backend, frontend ve veri tarafında yer aldım — FastAPI ile API'leri, React ile arayüzü kurdum, mekan verisini topladım ve düzenledim. Ekip arkadaşım makine öğrenmesi modelini eğitti; ben bu modeli backend'e entegre edip birlikte geliştirmeye devam ettik."
+           data-stack="Backend: FastAPI, PostgreSQL, SQLAlchemy, JWT, Docker. Frontend: React (Vite), Tailwind CSS, Google Maps API. ML: scikit-learn tabanlı öneri modeli."
+           data-outcome="Sohbet tabanlı bir arayüzle kullanıcıdan bütçe/gün/ilgi alanı bilgisi alıp gün gün optimize edilmiş bir rota, harita üzerinde görselleştirme ve tahmini bütçe hesaplıyor. Gerçek bir ürünü ekip hâlinde uçtan uca geliştirmeyi ilk kez deneyimledim."
+           data-link="https://github.com/bilgez/travelmind"
+           data-images="assets/projects/travelmind/01-anasayfa.png|assets/projects/travelmind/02-plan-olusturma.png|assets/projects/travelmind/03-rota-harita.png|assets/projects/travelmind/04-giris.png|assets/projects/travelmind/05-planlar.png">
         <div class="work-card-top">
           <h3 class="work-card-title">TravelMind</h3>
-          <span class="work-card-meta">2026 — Bitirme Projesi / Full-Stack</span>
+          <span class="work-card-meta">2026 — Bitirme Projesi (Ekip) / Full-Stack</span>
         </div>
-        <p class="work-card-desc">NLP tabanlı akıllı seyahat planlama sistemi — backend'i de frontend'i de kendim geliştirdim.</p>
+        <p class="work-card-desc">Yapay zeka destekli seyahat planlayıcı — bütçe ve zevkine göre otomatik, optimize edilmiş bir Antalya gezi rotası oluşturuyor.</p>
         <div class="work-tags">
           <span class="work-tag">FastAPI</span>
           <span class="work-tag">PostgreSQL</span>
           <span class="work-tag">React</span>
-          <span class="work-tag">Docker</span>
+          <span class="work-tag">ML</span>
         </div>
         <span class="work-open">Detayları gör →</span>
       </div>
 
       <div class="work-card"
-           data-title="Teknoloji Transfer Ofisi Projesi"
+           data-title="TTO Proje Yönetim Sistemi"
            data-meta="2025 — Kurumsal Proje / Frontend"
-           data-overview="Üniversitedeki araştırma görevlisi asistanlığım sırasında, bölüm başkanlığının talebiyle üniversitenin Teknoloji Transfer Ofisi için geliştirilen bir web uygulaması. 5 kişilik bir ekipte yer aldım."
-           data-role="Ekipte frontend geliştirici olarak yer aldım; React ve JavaScript ile kullanıcı arayüzünü geliştirdim."
-           data-stack="React, JavaScript, HTML, CSS"
-           data-outcome="Gerçek bir kurumsal talebe göre, bir ekip içinde ve zaman baskısı altında çalışmayı ilk kez deneyimledim."
+           data-overview="Üniversitenin Teknoloji Transfer Ofisi için, akademik projeleri, üniversite-sanayi işbirliği projelerini, öğrenci projelerini ve patent başvurularını tek bir sistemde yönetmeyi amaçlayan bir web uygulaması. Bölüm başkanlığının araştırma görevlisi asistanlığı kapsamında verdiği bu projede, 5 kişilik bir ekipte yer aldım."
+           data-role="'Üniversite-Sanayi İşbirliği Projeleri' ve 'Öğrenci Projeleri' modülleri proje listeleme ve çoklu filtreleme, yeni proje/firma kaydı formu, katılımcı ve belge yönetimi, ödeme planı takibi, ve süresi geçen ödemeler için otomatik hatırlatma paneli."
+           data-stack="React, React Router, JavaScript, CSS (component bazlı stil), form validasyonu, dosya yükleme arayüzü"
+           data-outcome="Backend ekibi projeyi yarıda bıraktığı için sistem canlıya alınamadı, ancak kendi payıma düşen frontend modülleri tamamen bitmiş durumda. Çok modüllü, form-ağırlıklı gerçek bir kurumsal arayüzü sıfırdan tasarlayıp geliştirmeyi deneyimledim."
            data-link=""
-           data-images="placeholder|placeholder">
+           data-images="assets/projects/tto/01-liste-filtreleme.png|assets/projects/tto/02-proje-detay.png|assets/projects/tto/03-yeni-proje-formu.png|assets/projects/tto/04-ogrenci-projeleri.png|assets/projects/tto/05-hatırlatmalar-uyarılar.png|">
         <div class="work-card-top">
-          <h3 class="work-card-title">Teknoloji Transfer Ofisi Projesi</h3>
+          <h3 class="work-card-title">TTO Proje Yönetim Sistemi</h3>
           <span class="work-card-meta">2025 — Kurumsal Proje / Frontend</span>
         </div>
-        <p class="work-card-desc">Bölüm başkanlığının verdiği kurumsal proje — 5 kişilik ekipte frontend geliştirici olarak yer aldım.</p>
+        <p class="work-card-desc">Üniversite Teknoloji Transfer Ofisi için proje/firma/ödeme takibi yapılan bir yönetim paneli.</p>
         <div class="work-tags">
           <span class="work-tag">React</span>
+          <span class="work-tag">JavaScript</span>
+          <span class="work-tag">React Router</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+
+             <div class="work-card"
+           data-title="2D Platform Oyunu"
+           data-meta="Ders Projesi (Final) — Unity / C#"
+           data-overview="Unity ve C# ile geliştirdiğim, artan zorlukta 3 seviyeli bir 2D platform oyunu. Karakter koşma/zıplama mekaniği, para toplama, devriye gezen düşmanlar, tuzaklar (dikenler, testereler, lav), bonus kiraz öğeleri ve checkpoint/bitiş bayrağıyla seviye geçişi içeriyor."
+           data-role="Oyunu baştan sona tek başıma geliştirdim — karakter animasyonları (koşma/zıplama/bekleme), düşman yapay zekası (iki nokta arası devriye), tilemap ile seviye tasarımı, ve tüm C# script'leri (PlayerMovement, GameController, Coin, Checkpoint, FinishPoint, MovingObstacle, cherry) dahil."
+           data-stack="Unity, C#, Tilemap, Animator Controller, Rigidbody2D"
+           data-outcome="Her seviyede düşman sayısını artırıp platform sayısını azaltarak zorluk eğrisi kurdum. Web geliştirmeden çok farklı bir düşünme biçimi gerektirdi — fizik tabanlı hareket, çarpışma tespiti ve animasyon durumları arasında geçiş yönetmeyi ilk kez deneyimledim."
+           data-link=""
+           data-images="assets/projects/unity-platformer/01-cim-seviyesi.png|assets/projects/unity-platformer/02-seker-seviyesi.png|assets/projects/unity-platformer/03-lav-seviyesi.png|assets/projects/unity-platformer/04-karakter.mp4|assets/projects/unity-platformer/05-dusmanlar.mp4|assets/projects/unity-platformer/06-bayrak.mp4|assets/projects/unity-platformer/07-kirazpara.mp4|assets/projects/unity-platformer/08-tuzaklar.mp4|assets/projects/unity-platformer/09-uzunvideo.mp4">
+        <div class="work-card-top">
+          <h3 class="work-card-title">2D Platform Oyunu</h3>
+          <span class="work-card-meta">Ders Projesi (Final) — Unity / C#</span>
+        </div>
+        <p class="work-card-desc">3 seviyeli, artan zorlukta bir 2D platform oyunu — karakter mekaniği, düşman AI'ı ve seviye tasarımının tamamı bana ait.</p>
+        <div class="work-tags">
+          <span class="work-tag">Unity</span>
+          <span class="work-tag">C#</span>
+          <span class="work-tag">Game Dev</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+ 
+
+       <div class="work-card"
+           data-title="ML Sınıflandırma Araç Seti"
+           data-meta="2025 — Ders Projesi (Ekip) / Machine Learning"
+           data-overview="Makine Öğrenmesi dersi için geliştirdiğimiz, kod yazmadan sınıflandırma modeli eğitip karşılaştırmayı sağlayan web tabanlı bir araç. Kullanıcı bir CSV veri seti yüklüyor, ön işleme (normalizasyon, one-hot encoding) seçeneklerini ayarlıyor, birden fazla modeli (Perceptron, MLP, Decision Tree) aynı anda eğitip performanslarını karşılaştırabiliyor."
+           data-role="Geliştirmeyi asıl olarak bir ekip arkadaşımla ikimiz yaptık. Önce masaüstü (Tkinter) bir araç olarak başlayan projeyi, daha sonra Streamlit ile web tabanlı bir arayüze taşıdık — model eğitim/karşılaştırma mantığı ve arayüz tasarımı üzerinde birlikte çalıştık."
+           data-stack="Python, Streamlit, scikit-learn (Perceptron, MLPClassifier, DecisionTreeClassifier), pandas, NumPy, Matplotlib, Seaborn"
+           data-outcome="Iris veri setiyle test ettiğimizde MLP ve Decision Tree modelleri %100 doğruluğa ulaştı, doğrusal bir sınıflandırıcı olan Perceptron ise %63'te kaldı. Bu, farklı modellerin ne zaman işe yaradığını teoride değil pratikte görmemi sağladı."
+           data-link="https://github.com/bilgez/ml-classification-toolkit"
+           data-images="assets/projects/ml-toolkit/02-konfigurasyon-veri.png|assets/projects/ml-toolkit/03-sonuclar.png|assets/projects/ml-toolkit/01-anasayfa.png">
+        <div class="work-card-top">
+          <h3 class="work-card-title">ML Sınıflandırma Araç Seti</h3>
+          <span class="work-card-meta">2025 — Ders Projesi (Ekip) / Machine Learning</span>
+        </div>
+        <p class="work-card-desc">CSV veri seti yükleyip kod yazmadan birden fazla sınıflandırma modelini eğitip karşılaştırabildiğin web tabanlı bir araç.</p>
+        <div class="work-tags">
+          <span class="work-tag">Python</span>
+          <span class="work-tag">Streamlit</span>
+          <span class="work-tag">scikit-learn</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+
+        <div class="work-card"
+           data-title="CPU Zamanlama Simülatörü"
+           data-meta="2025 — Ders Projesi / Sistem Programlama"
+           data-overview="Ceng305 İşletim Sistemleri dersi için C++ ile yazdığım 4 CPU zamanlama algoritmasını (FCFS, SJF, Round Robin, Priority) sonradan web'e taşıdım. Algoritmaları JavaScript'e yeniden yazarak backend gerektirmeyen, tarayıcıda çalışan, İngilizce/Türkçe dil desteği olan bir versiyon oluşturdum."
+           data-role="İlk sürümü (C++ çekirdek + Python/Tkinter masaüstü arayüz) solo geliştirdim, git ile 25 commit'lik adım adım bir süreçte. Sonrasında algoritmaları JavaScript'e taşıyıp modern bir web arayüzü kurdum ve GitHub Pages üzerinden yayına aldım."
+           data-stack="C++ (orijinal), Python/Tkinter (masaüstü GUI), JavaScript/HTML/CSS (web sürümü), GitHub Pages"
+           data-outcome="Aynı algoritmik problemi iki farklı platformda (masaüstü ve web) uygulamayı, ve zamanla var olan bir projeyi nasıl modernize edebileceğimi deneyimledim. Gantt chart görselleştirmesi ve çoklu algoritma karşılaştırması en çok emek verdiğim kısımlardı."
+           data-link="https://bilgez.github.io/op_project/"
+           data-images="assets/projects/cpu-scheduler/01-anasayfa.png|assets/projects/cpu-scheduler/02-tum-algoritmalar.png|assets/projects/cpu-scheduler/03-turkce.png">
+        <div class="work-card-top">
+          <h3 class="work-card-title">CPU Zamanlama Simülatörü</h3>
+          <span class="work-card-meta">2025 — Ders Projesi / Sistem Programlama</span>
+        </div>
+        <p class="work-card-desc">FCFS, SJF, Round Robin ve Priority Scheduling algoritmalarını canlı karşılaştıran, Gantt chart görselleştirmeli bir simülatör.</p>
+        <div class="work-tags">
+          <span class="work-tag">C++</span>
+          <span class="work-tag">JavaScript</span>
+          <span class="work-tag">GitHub Pages</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+
+        <div class="work-card"
+           data-title="NOTALONE"
+           data-meta="Ders Projesi (Ekip) / Frontend"
+           data-overview="Kadınlara yönelik farkındalık ve destek platformu — hikaye paylaşımı, makale/blog sistemi, forum ve kullanıcı/admin panelleri içeren çok sayfalı bir web tasarımı dersi projesi. Ekip arkadaşım backend'i üstlendi, ben tüm frontend'i geliştirdim."
+           data-role="66 sayfalık sitenin tamamının arayüzünü (HTML/CSS/JS) hiçbir framework kullanmadan, elle kurdum — ana sayfa, hikayeler, blog/makale sistemi, forum, kullanıcı ve admin panelleri dahil. Ekip arkadaşım aynı proje üzerinde backend tarafını ayrıca geliştirdi."
+           data-stack="HTML, CSS, JavaScript (vanilla), Owl Carousel"
+           data-outcome="React ya da benzeri bir kütüphane bilmeden, tamamen elle 66 sayfalık tutarlı bir tasarım dilini (pudra pembe tema, kart sistemleri, modal pencereler) sürdürebilmeyi öğrendim. React öğrenmeden önceki dönemimde yazdığım en kapsamlı frontend projem."
+           data-link=""
+           data-images="assets/projects/notalone/01-stories.png|assets/projects/notalone/02-cta-footer.png|assets/projects/notalone/03-anasayfa.png|assets/projects/notalone/04-blog.png">
+        <div class="work-card-top">
+          <h3 class="work-card-title">NOTALONE</h3>
+          <span class="work-card-meta">Ders Projesi (Ekip) / Frontend</span>
+        </div>
+        <p class="work-card-desc">Kadınlara yönelik bir destek platformu — 66 sayfalık tüm frontend'i (hikayeler, blog, forum, paneller) framework kullanmadan tek başıma kurdum.</p>
+        <div class="work-tags">
+          <span class="work-tag">HTML</span>
+          <span class="work-tag">CSS</span>
           <span class="work-tag">JavaScript</span>
         </div>
         <span class="work-open">Detayları gör →</span>
       </div>
 
-      <div class="work-card"
-           data-title="Unity ile Oyun Geliştirme"
-           data-meta="Kişisel Proje — Unity / C#"
-           data-overview="Unity motoru ile 2D/3D oyun geliştirme denemelerim. Oyun mekaniği, temel grafik tasarımı ve kullanıcı arayüzü üzerine kendi başıma çalıştım."
-           data-role="Solo proje — C# ile oyun mekaniği ve arayüz geliştirdim."
-           data-stack="Unity, C#"
-           data-outcome="Oyun geliştirmenin web geliştirmeden farklı bir düşünme biçimi gerektirdiğini gördüm; performans ve kullanıcı deneyimine farklı bir açıdan bakmayı öğrendim."
-           data-link=""
-           data-images="placeholder">
+         <div class="work-card"
+           data-title="Kütüphane Yönetim Sistemi"
+           data-meta="2025 — Ders Projesi (Ekip) / Full-Stack"
+           data-overview="Bir veritabanı dersi ödevi olarak SQL Server + MongoDB + terminal tabanlı bir Python CLI'yla başlayan proje; kitap ödünç alma/iade, otomatik stok takibi (trigger'lar) ve kitap yorumları içeriyordu. Bu projeyi web tabanlı, görsel bir arayüze taşıdım."
+           data-role="Orijinal CLI + SQL Server + MongoDB tasarımını bir ekip ödevi olarak birlikte yaptık. Web sürümüne taşıma işini (Flask backend, SQLite'a geçiş, orijinal trigger mantığının yeniden kurulması, tüm arayüz tasarımı) tek başıma gerçekleştirdim."
+           data-stack="Python, Flask, SQLite (trigger'larla), Jinja2, kendi yazdığım CSS — orijinal sürüm: SQL Server, MongoDB"
+           data-outcome="Var olan bir veritabanı projesini, mimariyi basitleştirerek ama temel mantığı (otomatik stok güncelleme trigger'ları) koruyarak nasıl daha erişilebilir/gösterilebilir hale getirebileceğimi öğrendim. Katalog arama, kitap detay + yorum/puanlama sistemi ve gecikmiş iade takibi içeriyor."
+           data-link="https://github.com/bilgez/library-management-system"
+           data-images="assets/projects/library/01-katalog.png|assets/projects/library/02-kitap-detay.png|assets/projects/library/03-odunc-kayitlari.png">
         <div class="work-card-top">
-          <h3 class="work-card-title">Unity ile Oyun Geliştirme</h3>
-          <span class="work-card-meta">Kişisel Proje — Unity / C#</span>
+          <h3 class="work-card-title">Kütüphane Yönetim Sistemi</h3>
+          <span class="work-card-meta">2025 — Ders Projesi (Ekip) / Full-Stack</span>
         </div>
-        <p class="work-card-desc">Unity motoru ile 2D/3D oyun geliştirme denemeleri — mekanik, arayüz ve grafik tasarımı.</p>
+        <p class="work-card-desc">SQL Server + terminal CLI olarak başlayan bir veritabanı ödevini, trigger'ları koruyarak modern bir web arayüzüne taşıdım.</p>
         <div class="work-tags">
-          <span class="work-tag">Unity</span>
-          <span class="work-tag">C#</span>
+          <span class="work-tag">Python</span>
+          <span class="work-tag">Flask</span>
+          <span class="work-tag">SQLite</span>
         </div>
         <span class="work-open">Detayları gör →</span>
       </div>
+
+         <div class="work-card"
+           data-title="Stok Takip Sistemi"
+           data-meta="Staj Projesi / Full-Stack"
+           data-overview="Stajım sırasında C# WinForms + SQL Server ile geliştirdiğim, malzeme stok takibi ve talep formu kayıtlarını yöneten bir masaüstü uygulamasını, web tabanlı, kurulum gerektirmeyen bir sürüme taşıdım."
+           data-role="Orijinal masaüstü uygulamasını stajda tek başıma geliştirmiştim. Bu web sürümünü de (Flask backend, SQLite'a geçiş, ürün kodu üretme mantığının yeniden tasarlanması, tüm arayüz) tek başıma kurdum."
+           data-stack="Python, Flask, SQLite, Jinja2, kendi yazdığım CSS — orijinal sürüm: C#, WinForms, SQL Server, Excel Interop"
+           data-outcome="Otomatik ürün kodu üretimi, arama/filtreleme ve Excel'e aktarma özelliklerini içeriyor. Var olan bir masaüstü aracını web'e taşırken, orijinal davranışları (büyük harfe otomatik çevirme gibi) nasıl koruyacağımı düşünmek zorunda kaldım."
+           data-link="https://github.com/bilgez/stock-tracking-system"
+           data-images="assets/projects/stock/01-stok-yonetimi.png|assets/projects/stock/02-yeni-kayit.png|assets/projects/stock/03-form-bilgileri.png">
+        <div class="work-card-top">
+          <h3 class="work-card-title">Stok Takip Sistemi</h3>
+          <span class="work-card-meta">Staj Projesi / Full-Stack</span>
+        </div>
+        <p class="work-card-desc">Stajda yazdığım bir WinForms stok takip uygulamasını, otomatik ürün kodlama mantığıyla web'e taşıdım.</p>
+        <div class="work-tags">
+          <span class="work-tag">Python</span>
+          <span class="work-tag">Flask</span>
+          <span class="work-tag">SQLite</span>
+        </div>
+        <span class="work-open">Detayları gör →</span>
+      </div>
+ 
 
     </div>
   </div>

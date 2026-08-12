@@ -55,8 +55,13 @@ function openWorkModal(card) {
   modal.querySelector('.wm-outcome').textContent = outcome;
 
   const linkEl = modal.querySelector('.wm-link');
-  if (link) { linkEl.href = link; linkEl.style.display = 'inline-flex'; }
-  else { linkEl.style.display = 'none'; }
+  if (link) {
+    linkEl.href = link;
+    linkEl.style.display = 'inline-flex';
+    linkEl.textContent = link.includes('github.com') ? 'GitHub\u2019da incele →' : 'Canlı projeyi gör →';
+  } else {
+    linkEl.style.display = 'none';
+  }
 
   // build gallery
   const track = modal.querySelector('.work-gallery-track');
@@ -71,6 +76,13 @@ function openWorkModal(card) {
     slide.className = 'work-gallery-slide';
     if (src === 'placeholder') {
       slide.textContent = 'GÖRSEL EKLENECEK';
+    } else if (/\.(mp4|webm|mov)$/i.test(src)) {
+      const video = document.createElement('video');
+      video.src = src;
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = 'metadata';
+      slide.appendChild(video);
     } else {
       const img = document.createElement('img');
       img.src = src; img.alt = `${title} — görsel ${i + 1}`;
@@ -83,6 +95,11 @@ function openWorkModal(card) {
   });
   updateGalleryPosition();
 
+  // pause any playing video when navigating away from its slide
+  track.querySelectorAll('video').forEach(v => v.addEventListener('play', () => {
+    track.querySelectorAll('video').forEach(other => { if (other !== v) other.pause(); });
+  }));
+
   // reset tabs to first
   modal.querySelectorAll('.work-tab-btn').forEach((b, i) => b.classList.toggle('active', i === 0));
   modal.querySelectorAll('.work-tab-panel').forEach((p, i) => p.classList.toggle('active', i === 0));
@@ -94,12 +111,25 @@ function openWorkModal(card) {
 function closeWorkModal() {
   overlay.classList.remove('is-open');
   document.body.style.overflow = '';
+  modal.querySelectorAll('video').forEach(v => v.pause());
 }
 
 function updateGalleryPosition() {
   const track = modal.querySelector('.work-gallery-track');
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
   modal.querySelectorAll('.gallery-dots span').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+
+  const allVideos = track.querySelectorAll('video');
+  allVideos.forEach(v => v.pause()); // önce hepsini durdur
+
+  const slides = track.querySelectorAll('.work-gallery-slide');
+  const activeSlide = slides[currentSlide];
+  const activeVideo = activeSlide ? activeSlide.querySelector('video') : null;
+  if (activeVideo) {
+    activeVideo.muted = true;      // tarayıcıların otomatik oynatma izni için sessiz başlat
+    activeVideo.currentTime = 0;
+    activeVideo.play().catch(() => {}); // otomatik oynatma engellenirse sessizce yut, kullanıcı play'e basar
+  }
 }
 
 document.querySelectorAll('.work-card').forEach(card => {
