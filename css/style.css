@@ -8,13 +8,13 @@
 
 :root {
   --bg: #e8e4ec;
-  --surface: #f0ecf4;
+  --surface: #f0ecf4; 
   --surface-2: #ddd8e4;
   --ink: #2a2838;
   --muted: #6a6878;
   --faint: #9a98a8;
-  --line: #d0ccd8;
-  --line-2: #c0bcc8;
+  --line: #cbc2db57;
+  --line-2: #c1bbcd;
   --pink: #c8bcc8;
   --lavender: #b0a8c8;
   --blue: #a8b8d0;
@@ -506,7 +506,6 @@ header#top {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-top: 1px solid var(--line);
 }
 
 .work-accordion-item {
@@ -939,4 +938,12 @@ footer .btn-primary:hover {
   footer .hero-actions {
     justify-content: center;
   }
+}
+.about-meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+  opacity: 0.7;  /* %70 görünürlük */
+  letter-spacing: 0.02em;
+  margin-top: 18px;
+  padding-top: 14px;
 }
