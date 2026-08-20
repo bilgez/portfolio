@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMind — Bilge Zerda Keklik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;1,400;1,500&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .project-page {
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .project-header {
+      margin-bottom: 48px;
+    }
+
+    .project-header .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s ease;
+    }
+
+    .project-header .back-link:hover {
+      color: var(--accent);
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+    }
+
+    .project-meta {
+      color: var(--faint);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .project-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      border: 1px solid var(--line);
+    }
+
+    .project-info h3 {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin: 0 0 8px;
+    }
+
+    .project-info p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin: 0 0 24px;
+    }
+
+    .project-info .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .project-info .tags span {
+      font-size: 0.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent-ink);
+      background: rgba(138, 128, 168, 0.08);
+      padding: 4px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+    }
+
+    .project-info .btn {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .project-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="../index.html#top" class="logo"><span class="logo-dot"></span>BZ</a>
+    <div class="nav-links">
+      <a href="../index.html#about">Hakkımda</a>
+      <a href="../index.html#stack">Teknolojiler</a>
+      <a href="../index.html#work">Projeler</a>
+      <a href="../index.html#experience">Deneyim</a>
+    </div>
+  </nav>
+
+  <main class="wrap project-page">
+    <div class="project-header">
+      <a href="../index.html#work" class="back-link">← Tüm projelere dön</a>
+      <h1 class="project-title">TravelMind</h1>
+      <p class="project-meta">2026 — Bitirme Projesi (Ekip) / Full-Stack</p>
+    </div>
+
+    <div class="project-content">
+      <!-- Galeri -->
+      <div class="project-gallery">
+        <img src="01anasayfa.png" alt="TravelMind ana sayfa">
+        <img src="02-plan-olusturma.png" alt="TravelMind plan oluşturma">
+        <img src="03-rota-harita.png" alt="TravelMind rota harita">
+      </div>
+
+      <!-- Bilgiler -->
+      <div class="project-info">
+        <h3>Genel Bakış</h3>
+        <p>Kullanıcının doğal dilde yazdığı tek bir cümleye göre (bütçe, gün sayısı, ilgi alanları) kişiselleştirilmiş bir Antalya gezi planı oluşturan, yapay zeka destekli bir seyahat planlayıcı. Ekip arkadaşımla birlikte geliştirdiğimiz bitirme projemiz.</p>
+
+        <h3>Rolüm</h3>
+        <p>Backend, frontend ve veri tarafında yer aldım — FastAPI ile API'leri, React ile arayüzü kurdum, mekan verisini topladım ve düzenledim. Ekip arkadaşım makine öğrenmesi modelini eğitti; ben bu modeli backend'e entegre edip birlikte geliştirmeye devam ettik.</p>
+
+        <h3>Teknolojiler</h3>
+        <div class="tags">
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>SQLAlchemy</span>
+          <span>JWT</span>
+          <span>Docker</span>
+          <span>React</span>
+          <span>Vite</span>
+          <span>Tailwind CSS</span>
+          <span>Google Maps API</span>
+          <span>scikit-learn</span>
+        </div>
+
+        <h3>Sonuç</h3>
+        <p>Sohbet tabanlı bir arayüzle kullanıcıdan bütçe/gün/ilgi alanı bilgisi alıp gün gün optimize edilmiş bir rota, harita üzerinde görselleştirme ve tahmini bütçe hesaplıyor. Gerçek bir ürünü ekip hâlinde uçtan uca geliştirmeyi ilk kez deneyimledim.</p>
+
+        <a href="https://travelmind-72bi6q3iu-bilgezs-projects.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Canlı projeyi gör →</a>
+        <a href="https://github.com/bilgez/travelmind" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-left: 10px;">GitHub'da incele →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Bilge Zerda Keklik</span>
+    <div>
+      <a href="https://github.com/bilgez" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/bilgezerda" target="_blank" rel="noopener" style="margin-left: 16px;">LinkedIn</a>
+    </div>
+    <span>Tasarım & geliştirme: Bilge Zerda Keklik</span>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

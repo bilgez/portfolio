@@ -55,18 +55,18 @@
 
       // mouse: one big soft glossy highlight that clearly follows the cursor
       float d = distance(p, mouse);
-      float glow = smoothstep(1.25, 0.0, d);
-      float glowCore = smoothstep(0.55, 0.0, d);
+      float glow = smoothstep(1.20, 0.0, d);
+      float glowCore = smoothstep(0.50, 0.0, d);
 
       // palette — soft pudra tones only, close to the liquid-chrome reference
-      vec3 cream    = vec3(0.976, 0.965, 0.960);
-      vec3 grey     = vec3(0.88, 0.87, 0.885);
-      vec3 lavender = vec3(0.78, 0.74, 0.87);
-      vec3 pink     = vec3(0.90, 0.79, 0.80);
+      vec3 cream    = vec3(0.92, 0.90, 0.95);   // soğuk pudra-mor
+      vec3 grey     = vec3(0.75, 0.75, 0.82);   // soğuk gri-mor
+      vec3 lavender = vec3(0.60, 0.55, 0.78);   // lila
+      vec3 pink     = vec3(0.70, 0.75, 0.88);   // buz mavisi (pembe değil!)
 
       vec3 col = mix(cream, grey, smoothstep(0.1, 0.9, n1));
       col = mix(col, lavender, glow * 0.85);
-      col = mix(col, pink, glowCore * 0.55);
+      col = mix(col, pink, glowCore * 0.85);
 
       // keep it light at all times
       col = mix(col, vec3(1.0), 0.12);

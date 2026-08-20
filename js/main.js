@@ -169,4 +169,60 @@ if (langToggle) {
       el.textContent = lang === 'tr' ? el.dataset.tr : (el.dataset.en || el.dataset.tr);
     });
   });
+
+  // ============ WORK ACCORDION ============
+document.querySelectorAll('.work-accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.closest('.work-accordion-item');
+    const isOpen = item.classList.contains('is-open');
+
+    // Diğerlerini kapat (isteğe bağlı)
+    document.querySelectorAll('.work-accordion-item.is-open').forEach(openItem => {
+      if (openItem !== item) openItem.classList.remove('is-open');
+    });
+
+    item.classList.toggle('is-open');
+  });
+});
+// ============ GALERİ (KAYDIRMA) ============
+document.querySelectorAll('.work-gallery-slider').forEach(slider => {
+  const track = slider.querySelector('.work-gallery-track');
+  const images = track.querySelectorAll('img');
+  const prevBtn = slider.querySelector('.gallery-btn.prev');
+  const nextBtn = slider.querySelector('.gallery-btn.next');
+  const dotsContainer = slider.closest('.work-accordion-gallery').querySelector('.gallery-dots');
+  let currentIndex = 0;
+  const totalSlides = images.length;
+
+  // Noktaları oluştur
+  dotsContainer.innerHTML = '';
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.dataset.index = i;
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  function goTo(index) {
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    currentIndex = index;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    // Noktaları güncelle
+    dotsContainer.querySelectorAll('span').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+  // Klavye ile kontrol
+  slider.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') goTo(currentIndex - 1);
+    if (e.key === 'ArrowRight') goTo(currentIndex + 1);
+  });
+});
 }

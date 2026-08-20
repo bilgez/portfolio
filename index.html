@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bilge Keklik — Yazılım Mühendisi</title>
-<meta name="description" content="Bilge Keklik — Yazılım Mühendisliği mezunu. Portfolyo ve seçilmiş projeler.">
+<title>Bilge Zerda Keklik — Yazılım Mühendisi</title>
+<meta name="description" content="Bilge Zerda Keklik — Yazılım Mühendisliği mezunu. Portfolyo ve seçilmiş projeler.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;1,400;1,500&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,11 @@
     <a href="#experience">Deneyim</a>
     <a href="#contact">İletişim</a>
   </div>
-  <button id="langToggle" type="button" aria-label="Dili değiştir">🌐 <span>TR</span></button>
+  <button id="langToggle" type="button" aria-label="Dili değiştir" class="lang-btn">
+  <span class="lang-text">TR</span>
+  <span class="lang-divider">|</span>
+  <span class="lang-text inactive">EN</span>
+</button>
 </nav>
 
 <!-- ============ HERO ============ -->
@@ -63,92 +67,24 @@
   </div>
 </section>
 
-<!-- ============ TECH STACK ============
- 
-<section class="section" id="stack" data-reveal>
-  <div class="wrap">
-    <p class="eyebrow" style="text-align:center">Teknolojiler</p>
-    <h2 class="stack-title">TECH STACK</h2>
-    <div class="techstack-pyramid">
-      <div class="techstack-row">
-        <a href="https://python.org" target="_blank" rel="noopener" class="techstack-item" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="techstack-item" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></a>
-        <a href="https://typescriptlang.org" target="_blank" rel="noopener" class="techstack-item" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></a>
-        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener" class="techstack-item" title="C#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></a>
-        <a href="https://isocpp.org" target="_blank" rel="noopener" class="techstack-item" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></a>
-        <a href="https://kotlinlang.org" target="_blank" rel="noopener" class="techstack-item" title="Kotlin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><span>Kotlin</span></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" class="techstack-item" title="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" class="techstack-item" title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></a>
-        <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener" class="techstack-item" title="Bash"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><span>Bash</span></a>
-        <a href="https://react.dev" target="_blank" rel="noopener" class="techstack-item" title="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></a>
-        <a href="https://nextjs.org" target="_blank" rel="noopener" class="techstack-item" title="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"><span>Next.js</span></a>
-        <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="techstack-item" title="Bootstrap"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></a>
-      </div>
-      <div class="techstack-row">
-        <a href="https://nodejs.org" target="_blank" rel="noopener" class="techstack-item" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></a>
-        <a href="https://djangoproject.com" target="_blank" rel="noopener" class="techstack-item" title="Django"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"><span>Django</span></a>
-        <a href="https://flask.palletsprojects.com" target="_blank" rel="noopener" class="techstack-item" title="Flask"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></a>
-        <a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener" class="techstack-item" title="FastAPI"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"><span>FastAPI</span></a>
-        <a href="https://tensorflow.org" target="_blank" rel="noopener" class="techstack-item" title="TensorFlow"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"><span>TensorFlow</span></a>
-        <a href="https://pytorch.org" target="_blank" rel="noopener" class="techstack-item" title="PyTorch"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"><span>PyTorch</span></a>
-        <a href="https://scikit-learn.org" target="_blank" rel="noopener" class="techstack-item" title="Scikit-learn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"><span>Scikit-learn</span></a>
-        <a href="https://opencv.org" target="_blank" rel="noopener" class="techstack-item" title="OpenCV"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"><span>OpenCV</span></a>
-        <a href="https://numpy.org" target="_blank" rel="noopener" class="techstack-item" title="NumPy"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"><span>NumPy</span></a>
-        <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="techstack-item" title="Tailwind"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"><span>Tailwind</span></a>
-      </div>
-      <div class="techstack-row">
-        <a href="https://pandas.pydata.org" target="_blank" rel="noopener" class="techstack-item" title="Pandas"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></a>
-        <a href="https://mysql.com" target="_blank" rel="noopener" class="techstack-item" title="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></a>
-        <a href="https://postgresql.org" target="_blank" rel="noopener" class="techstack-item" title="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></a>
-        <a href="https://mongodb.com" target="_blank" rel="noopener" class="techstack-item" title="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></a>
-        <a href="https://firebase.google.com" target="_blank" rel="noopener" class="techstack-item" title="Firebase"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></a>
-        <a href="https://redis.io" target="_blank" rel="noopener" class="techstack-item" title="Redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"><span>Redis</span></a>
-        <a href="https://docker.com" target="_blank" rel="noopener" class="techstack-item" title="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><span>Docker</span></a>
-        <a href="https://azure.microsoft.com" target="_blank" rel="noopener" class="techstack-item" title="Azure"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><span>Azure</span></a>
-      </div>
-      <div class="techstack-row">
-        <a href="https://git-scm.com" target="_blank" rel="noopener" class="techstack-item" title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></a>
-        <a href="https://github.com" target="_blank" rel="noopener" class="techstack-item" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></a>
-        <a href="https://linux.org" target="_blank" rel="noopener" class="techstack-item" title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></a>
-        <a href="https://aws.amazon.com" target="_blank" rel="noopener" class="techstack-item" title="AWS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"><span>AWS</span></a>
-        <a href="https://code.visualstudio.com" target="_blank" rel="noopener" class="techstack-item" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></a>
-        <a href="https://vercel.com" target="_blank" rel="noopener" class="techstack-item" title="Vercel"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"><span>Vercel</span></a>
-      </div>
-      <div class="techstack-row">
-        <a href="https://jupyter.org" target="_blank" rel="noopener" class="techstack-item" title="Jupyter"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"><span>Jupyter</span></a>
-        <a href="https://figma.com" target="_blank" rel="noopener" class="techstack-item" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></a>
-        <a href="https://postman.com" target="_blank" rel="noopener" class="techstack-item" title="Postman"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></a>
-        <a href="https://adobe.com/products/photoshop" target="_blank" rel="noopener" class="techstack-item" title="Photoshop"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop"><span>Photoshop</span></a>
-      </div>
-      <div class="techstack-row">
-        <a href="https://huggingface.co" target="_blank" rel="noopener" class="techstack-item" title="Hugging Face"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face"><span>Hugging Face</span></a>
-        <a href="https://www.microsoft.com/microsoft-365" target="_blank" rel="noopener" class="techstack-item" title="MS Office"><img src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="MS Office"><span>MS Office</span></a>
-      </div>
-    </div>
-  </div>
-</section> 
--->
-
+<!-- ============ TECH STACK ============ -->
 <section class="section" id="stack" data-reveal>
   <div class="wrap">
     <p class="eyebrow" style="text-align:center">Teknolojiler</p>
     <h2 class="stack-title">TECH STACK</h2>
     
-    <!-- 1. CORE -->
     <div class="stack-group">
       <p class="stack-group-label">Core</p>
       <div class="stack-row">
         <a href="https://python.org" target="_blank" rel="noopener" class="stack-item" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="stack-item" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></a>
         <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener" class="stack-item" title="C#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></a>
-        <!--         <a href="https://isocpp.org" target="_blank" rel="noopener" class="stack-item" title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></a> -->
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" class="stack-item" title="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"></a>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" class="stack-item" title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"></a>
         <a href="https://typescriptlang.org" target="_blank" rel="noopener" class="stack-item" title="TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></a>
       </div>
     </div>
 
-    <!-- 2. BACKEND -->
     <div class="stack-group">
       <p class="stack-group-label">Backend</p>
       <div class="stack-row">
@@ -159,7 +95,6 @@
       </div>
     </div>
 
-    <!-- 3. FRONTEND -->
     <div class="stack-group">
       <p class="stack-group-label">Frontend</p>
       <div class="stack-row">
@@ -169,7 +104,6 @@
       </div>
     </div>
 
-    <!-- 4. DATA / ML -->
     <div class="stack-group">
       <p class="stack-group-label">Data / ML</p>
       <div class="stack-row">
@@ -181,7 +115,6 @@
       </div>
     </div>
 
-    <!-- 5. DATABASES -->
     <div class="stack-group">
       <p class="stack-group-label">Databases</p>
       <div class="stack-row">
@@ -192,7 +125,6 @@
       </div>
     </div>
 
-    <!-- 6. TOOLS -->
     <div class="stack-group">
       <p class="stack-group-label">Tools</p>
       <div class="stack-row">
@@ -210,236 +142,434 @@
 
 <!-- ============ WORK ============ -->
 <section class="section" id="work" data-reveal>
-  <div class="wrap">
-    <p class="eyebrow">Seçilmiş Projeler</p>
-    <div class="work-list">
+  <div class="wrap" style="padding:0;">
+    <p class="eyebrow" style="padding-inline:clamp(20px,6vw,80px);">Seçilmiş Projeler</p>
+    <div class="work-accordion" style="padding-inline:clamp(20px,6vw,80px);">
 
-      <div class="work-card"
-           data-title="TravelMind"
-           data-meta="2026 — Bitirme Projesi (Ekip) / Full-Stack"
-           data-overview="Kullanıcının doğal dilde yazdığı tek bir cümleye göre (bütçe, gün sayısı, ilgi alanları) kişiselleştirilmiş bir Antalya gezi planı oluşturan, yapay zeka destekli bir seyahat planlayıcı. Ekip arkadaşımla birlikte geliştirdiğimiz bitirme projemiz."
-           data-role="Backend, frontend ve veri tarafında yer aldım — FastAPI ile API'leri, React ile arayüzü kurdum, mekan verisini topladım ve düzenledim. Ekip arkadaşım makine öğrenmesi modelini eğitti; ben bu modeli backend'e entegre edip birlikte geliştirmeye devam ettik."
-           data-stack="Backend: FastAPI, PostgreSQL, SQLAlchemy, JWT, Docker. Frontend: React (Vite), Tailwind CSS, Google Maps API. ML: scikit-learn tabanlı öneri modeli."
-           data-outcome="Sohbet tabanlı bir arayüzle kullanıcıdan bütçe/gün/ilgi alanı bilgisi alıp gün gün optimize edilmiş bir rota, harita üzerinde görselleştirme ve tahmini bütçe hesaplıyor. Gerçek bir ürünü ekip hâlinde uçtan uca geliştirmeyi ilk kez deneyimledim."
-           data-link="https://github.com/bilgez/travelmind"
-           data-images="assets/projects/travelmind/01-anasayfa.png|assets/projects/travelmind/02-plan-olusturma.png|assets/projects/travelmind/03-rota-harita.png|assets/projects/travelmind/04-giris.png|assets/projects/travelmind/05-planlar.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">TravelMind</h3>
-          <span class="work-card-meta">2026 — Bitirme Projesi (Ekip) / Full-Stack</span>
+      <!-- TravelMind -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">01</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">TravelMind</h3>
+            <p class="work-accordion-desc">Yapay zeka destekli seyahat planlayıcı</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>ML</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/travelmind/01-anasayfa.png" alt="TravelMind ana sayfa">
+                  <img src="assets/projects/travelmind/02-plan-olusturma.png" alt="TravelMind plan oluşturma">
+                  <img src="assets/projects/travelmind/03-rota-harita.png" alt="TravelMind rota harita">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Kullanıcının doğal dilde yazdığı tek bir cümleye göre (bütçe, gün sayısı, ilgi alanları) kişiselleştirilmiş bir Antalya gezi planı oluşturan, yapay zeka destekli bir seyahat planlayıcı. Ekip arkadaşımla birlikte geliştirdiğimiz bitirme projemiz.</p>
+              <h4>Rolüm</h4>
+              <p>Backend, frontend ve veri tarafında yer aldım — FastAPI ile API'leri, React ile arayüzü kurdum, mekan verisini topladım ve düzenledim. Ekip arkadaşım makine öğrenmesi modelini eğitti; ben bu modeli backend'e entegre edip birlikte geliştirmeye devam ettik.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span>
+                <span>JWT</span><span>Docker</span><span>React</span>
+                <span>Vite</span><span>Tailwind CSS</span><span>Google Maps API</span>
+                <span>scikit-learn</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Sohbet tabanlı bir arayüzle kullanıcıdan bütçe/gün/ilgi alanı bilgisi alıp gün gün optimize edilmiş bir rota, harita üzerinde görselleştirme ve tahmini bütçe hesaplıyor. Gerçek bir ürünü ekip hâlinde uçtan uca geliştirmeyi ilk kez deneyimledim.</p>
+              <div class="work-accordion-links">
+                <a href="https://travelmind-72bi6q3iu-bilgezs-projects.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Canlı projeyi gör →</a>
+                <a href="https://github.com/bilgez/travelmind" target="_blank" rel="noopener" class="btn btn-secondary">GitHub'da incele →</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">Yapay zeka destekli seyahat planlayıcı — bütçe ve zevkine göre otomatik, optimize edilmiş bir Antalya gezi rotası oluşturuyor.</p>
-        <div class="work-tags">
-          <span class="work-tag">FastAPI</span>
-          <span class="work-tag">PostgreSQL</span>
-          <span class="work-tag">React</span>
-          <span class="work-tag">ML</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
 
-      <div class="work-card"
-           data-title="TTO Proje Yönetim Sistemi"
-           data-meta="2025 — Kurumsal Proje / Frontend"
-           data-overview="Üniversitenin Teknoloji Transfer Ofisi için, akademik projeleri, üniversite-sanayi işbirliği projelerini, öğrenci projelerini ve patent başvurularını tek bir sistemde yönetmeyi amaçlayan bir web uygulaması. Bölüm başkanlığının araştırma görevlisi asistanlığı kapsamında verdiği bu projede, 5 kişilik bir ekipte yer aldım."
-           data-role="'Üniversite-Sanayi İşbirliği Projeleri' ve 'Öğrenci Projeleri' modülleri proje listeleme ve çoklu filtreleme, yeni proje/firma kaydı formu, katılımcı ve belge yönetimi, ödeme planı takibi, ve süresi geçen ödemeler için otomatik hatırlatma paneli."
-           data-stack="React, React Router, JavaScript, CSS (component bazlı stil), form validasyonu, dosya yükleme arayüzü"
-           data-outcome="Backend ekibi projeyi yarıda bıraktığı için sistem canlıya alınamadı, ancak kendi payıma düşen frontend modülleri tamamen bitmiş durumda. Çok modüllü, form-ağırlıklı gerçek bir kurumsal arayüzü sıfırdan tasarlayıp geliştirmeyi deneyimledim."
-           data-link=""
-           data-images="assets/projects/tto/01-liste-filtreleme.png|assets/projects/tto/02-proje-detay.png|assets/projects/tto/03-yeni-proje-formu.png|assets/projects/tto/04-ogrenci-projeleri.png|assets/projects/tto/05-hatırlatmalar-uyarılar.png|">
-        <div class="work-card-top">
-          <h3 class="work-card-title">TTO Proje Yönetim Sistemi</h3>
-          <span class="work-card-meta">2025 — Kurumsal Proje / Frontend</span>
+      <!-- TTO Proje Yönetim Sistemi -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">02</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">TTO Proje Yönetim Sistemi</h3>
+            <p class="work-accordion-desc">Üniversite Teknoloji Transfer Ofisi için yönetim paneli</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>React</span>
+            <span>JavaScript</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/tto/01-liste-filtreleme.png" alt="TTO proje listesi">
+                  <img src="assets/projects/tto/02-proje-detay.png" alt="TTO proje detay">
+                  <img src="assets/projects/tto/03-yeni-proje-formu.png" alt="TTO yeni proje formu">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Üniversitenin Teknoloji Transfer Ofisi için, akademik projeleri, üniversite-sanayi işbirliği projelerini, öğrenci projelerini ve patent başvurularını tek bir sistemde yönetmeyi amaçlayan bir web uygulaması. Bölüm başkanlığının araştırma görevlisi asistanlığı kapsamında verdiği bu projede, 5 kişilik bir ekipte yer aldım.</p>
+              <h4>Rolüm</h4>
+              <p>'Üniversite-Sanayi İşbirliği Projeleri' ve 'Öğrenci Projeleri' modülleri proje listeleme ve çoklu filtreleme, yeni proje/firma kaydı formu, katılımcı ve belge yönetimi, ödeme planı takibi, ve süresi geçen ödemeler için otomatik hatırlatma paneli.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>React</span><span>React Router</span><span>JavaScript</span>
+                <span>CSS</span><span>Form Validasyonu</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Backend ekibi projeyi yarıda bıraktığı için sistem canlıya alınamadı, ancak kendi payıma düşen frontend modülleri tamamen bitmiş durumda. Çok modüllü, form-ağırlıklı gerçek bir kurumsal arayüzü sıfırdan tasarlayıp geliştirmeyi deneyimledim.</p>
+              <div class="work-accordion-links">
+                <span class="work-no-link">🔒 Canlı link yok (backend tamamlanmadı)</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">Üniversite Teknoloji Transfer Ofisi için proje/firma/ödeme takibi yapılan bir yönetim paneli.</p>
-        <div class="work-tags">
-          <span class="work-tag">React</span>
-          <span class="work-tag">JavaScript</span>
-          <span class="work-tag">React Router</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
 
-             <div class="work-card"
-           data-title="2D Platform Oyunu"
-           data-meta="Ders Projesi (Final) — Unity / C#"
-           data-overview="Unity ve C# ile geliştirdiğim, artan zorlukta 3 seviyeli bir 2D platform oyunu. Karakter koşma/zıplama mekaniği, para toplama, devriye gezen düşmanlar, tuzaklar (dikenler, testereler, lav), bonus kiraz öğeleri ve checkpoint/bitiş bayrağıyla seviye geçişi içeriyor."
-           data-role="Oyunu baştan sona tek başıma geliştirdim — karakter animasyonları (koşma/zıplama/bekleme), düşman yapay zekası (iki nokta arası devriye), tilemap ile seviye tasarımı, ve tüm C# script'leri (PlayerMovement, GameController, Coin, Checkpoint, FinishPoint, MovingObstacle, cherry) dahil."
-           data-stack="Unity, C#, Tilemap, Animator Controller, Rigidbody2D"
-           data-outcome="Her seviyede düşman sayısını artırıp platform sayısını azaltarak zorluk eğrisi kurdum. Web geliştirmeden çok farklı bir düşünme biçimi gerektirdi — fizik tabanlı hareket, çarpışma tespiti ve animasyon durumları arasında geçiş yönetmeyi ilk kez deneyimledim."
-           data-link=""
-           data-images="assets/projects/unity-platformer/01-cim-seviyesi.png|assets/projects/unity-platformer/02-seker-seviyesi.png|assets/projects/unity-platformer/03-lav-seviyesi.png|assets/projects/unity-platformer/04-karakter.mp4|assets/projects/unity-platformer/05-dusmanlar.mp4|assets/projects/unity-platformer/06-bayrak.mp4|assets/projects/unity-platformer/07-kirazpara.mp4|assets/projects/unity-platformer/08-tuzaklar.mp4|assets/projects/unity-platformer/09-uzunvideo.mp4">
-        <div class="work-card-top">
-          <h3 class="work-card-title">2D Platform Oyunu</h3>
-          <span class="work-card-meta">Ders Projesi (Final) — Unity / C#</span>
+      <!-- 2D Platform Oyunu -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">03</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">2D Platform Oyunu</h3>
+            <p class="work-accordion-desc">3 seviyeli, artan zorlukta platform oyunu</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>Unity</span>
+            <span>C#</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/unity-platformer/01-cim-seviyesi.png" alt="Çim seviyesi">
+                  <img src="assets/projects/unity-platformer/02-seker-seviyesi.png" alt="Şeker seviyesi">
+                  <img src="assets/projects/unity-platformer/03-lav-seviyesi.png" alt="Lav seviyesi">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Unity ve C# ile geliştirdiğim, artan zorlukta 3 seviyeli bir 2D platform oyunu. Karakter koşma/zıplama mekaniği, para toplama, devriye gezen düşmanlar, tuzaklar (dikenler, testereler, lav), bonus kiraz öğeleri ve checkpoint/bitiş bayrağıyla seviye geçişi içeriyor.</p>
+              <h4>Rolüm</h4>
+              <p>Oyunu baştan sona tek başıma geliştirdim — karakter animasyonları (koşma/zıplama/bekleme), düşman yapay zekası (iki nokta arası devriye), tilemap ile seviye tasarımı, ve tüm C# script'leri (PlayerMovement, GameController, Coin, Checkpoint, FinishPoint, MovingObstacle, cherry) dahil.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>Unity</span><span>C#</span><span>Tilemap</span>
+                <span>Animator Controller</span><span>Rigidbody2D</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Her seviyede düşman sayısını artırıp platform sayısını azaltarak zorluk eğrisi kurdum. Web geliştirmeden çok farklı bir düşünme biçimi gerektirdi — fizik tabanlı hareket, çarpışma tespiti ve animasyon durumları arasında geçiş yönetmeyi ilk kez deneyimledim.</p>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">3 seviyeli, artan zorlukta bir 2D platform oyunu — karakter mekaniği, düşman AI'ı ve seviye tasarımının tamamı bana ait.</p>
-        <div class="work-tags">
-          <span class="work-tag">Unity</span>
-          <span class="work-tag">C#</span>
-          <span class="work-tag">Game Dev</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
-      </div>
- 
-
-       <div class="work-card"
-           data-title="ML Sınıflandırma Araç Seti"
-           data-meta="2025 — Ders Projesi (Ekip) / Machine Learning"
-           data-overview="Makine Öğrenmesi dersi için geliştirdiğimiz, kod yazmadan sınıflandırma modeli eğitip karşılaştırmayı sağlayan web tabanlı bir araç. Kullanıcı bir CSV veri seti yüklüyor, ön işleme (normalizasyon, one-hot encoding) seçeneklerini ayarlıyor, birden fazla modeli (Perceptron, MLP, Decision Tree) aynı anda eğitip performanslarını karşılaştırabiliyor."
-           data-role="Geliştirmeyi asıl olarak bir ekip arkadaşımla ikimiz yaptık. Önce masaüstü (Tkinter) bir araç olarak başlayan projeyi, daha sonra Streamlit ile web tabanlı bir arayüze taşıdık — model eğitim/karşılaştırma mantığı ve arayüz tasarımı üzerinde birlikte çalıştık."
-           data-stack="Python, Streamlit, scikit-learn (Perceptron, MLPClassifier, DecisionTreeClassifier), pandas, NumPy, Matplotlib, Seaborn"
-           data-outcome="Iris veri setiyle test ettiğimizde MLP ve Decision Tree modelleri %100 doğruluğa ulaştı, doğrusal bir sınıflandırıcı olan Perceptron ise %63'te kaldı. Bu, farklı modellerin ne zaman işe yaradığını teoride değil pratikte görmemi sağladı."
-           data-link="https://github.com/bilgez/ml-classification-toolkit"
-           data-images="assets/projects/ml-toolkit/02-konfigurasyon-veri.png|assets/projects/ml-toolkit/03-sonuclar.png|assets/projects/ml-toolkit/01-anasayfa.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">ML Sınıflandırma Araç Seti</h3>
-          <span class="work-card-meta">2025 — Ders Projesi (Ekip) / Machine Learning</span>
-        </div>
-        <p class="work-card-desc">CSV veri seti yükleyip kod yazmadan birden fazla sınıflandırma modelini eğitip karşılaştırabildiğin web tabanlı bir araç.</p>
-        <div class="work-tags">
-          <span class="work-tag">Python</span>
-          <span class="work-tag">Streamlit</span>
-          <span class="work-tag">scikit-learn</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
-      </div>
-
-        <div class="work-card"
-           data-title="CPU Zamanlama Simülatörü"
-           data-meta="2025 — Ders Projesi / Sistem Programlama"
-           data-overview="Ceng305 İşletim Sistemleri dersi için C++ ile yazdığım 4 CPU zamanlama algoritmasını (FCFS, SJF, Round Robin, Priority) sonradan web'e taşıdım. Algoritmaları JavaScript'e yeniden yazarak backend gerektirmeyen, tarayıcıda çalışan, İngilizce/Türkçe dil desteği olan bir versiyon oluşturdum."
-           data-role="İlk sürümü (C++ çekirdek + Python/Tkinter masaüstü arayüz) solo geliştirdim, git ile 25 commit'lik adım adım bir süreçte. Sonrasında algoritmaları JavaScript'e taşıyıp modern bir web arayüzü kurdum ve GitHub Pages üzerinden yayına aldım."
-           data-stack="C++ (orijinal), Python/Tkinter (masaüstü GUI), JavaScript/HTML/CSS (web sürümü), GitHub Pages"
-           data-outcome="Aynı algoritmik problemi iki farklı platformda (masaüstü ve web) uygulamayı, ve zamanla var olan bir projeyi nasıl modernize edebileceğimi deneyimledim. Gantt chart görselleştirmesi ve çoklu algoritma karşılaştırması en çok emek verdiğim kısımlardı."
-           data-link="https://bilgez.github.io/op_project/"
-           data-images="assets/projects/cpu-scheduler/01-anasayfa.png|assets/projects/cpu-scheduler/02-tum-algoritmalar.png|assets/projects/cpu-scheduler/03-turkce.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">CPU Zamanlama Simülatörü</h3>
-          <span class="work-card-meta">2025 — Ders Projesi / Sistem Programlama</span>
-        </div>
-        <p class="work-card-desc">FCFS, SJF, Round Robin ve Priority Scheduling algoritmalarını canlı karşılaştıran, Gantt chart görselleştirmeli bir simülatör.</p>
-        <div class="work-tags">
-          <span class="work-tag">C++</span>
-          <span class="work-tag">JavaScript</span>
-          <span class="work-tag">GitHub Pages</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
 
-        <div class="work-card"
-           data-title="NOTALONE"
-           data-meta="Ders Projesi (Ekip) / Frontend"
-           data-overview="Kadınlara yönelik farkındalık ve destek platformu — hikaye paylaşımı, makale/blog sistemi, forum ve kullanıcı/admin panelleri içeren çok sayfalı bir web tasarımı dersi projesi. Ekip arkadaşım backend'i üstlendi, ben tüm frontend'i geliştirdim."
-           data-role="66 sayfalık sitenin tamamının arayüzünü (HTML/CSS/JS) hiçbir framework kullanmadan, elle kurdum — ana sayfa, hikayeler, blog/makale sistemi, forum, kullanıcı ve admin panelleri dahil. Ekip arkadaşım aynı proje üzerinde backend tarafını ayrıca geliştirdi."
-           data-stack="HTML, CSS, JavaScript (vanilla), Owl Carousel"
-           data-outcome="React ya da benzeri bir kütüphane bilmeden, tamamen elle 66 sayfalık tutarlı bir tasarım dilini (pudra pembe tema, kart sistemleri, modal pencereler) sürdürebilmeyi öğrendim. React öğrenmeden önceki dönemimde yazdığım en kapsamlı frontend projem."
-           data-link=""
-           data-images="assets/projects/notalone/01-stories.png|assets/projects/notalone/02-cta-footer.png|assets/projects/notalone/03-anasayfa.png|assets/projects/notalone/04-blog.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">NOTALONE</h3>
-          <span class="work-card-meta">Ders Projesi (Ekip) / Frontend</span>
+      <!-- ML Sınıflandırma Araç Seti -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">04</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">ML Sınıflandırma Araç Seti</h3>
+            <p class="work-accordion-desc">Kod yazmadan model eğitip karşılaştır</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>Python</span>
+            <span>Streamlit</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/ml-toolkit/01-anasayfa.png" alt="ML Toolkit ana sayfa">
+                  <img src="assets/projects/ml-toolkit/02-konfigurasyon-veri.png" alt="ML Toolkit konfigürasyon">
+                  <img src="assets/projects/ml-toolkit/03-sonuclar.png" alt="ML Toolkit sonuçlar">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Makine Öğrenmesi dersi için geliştirdiğimiz, kod yazmadan sınıflandırma modeli eğitip karşılaştırmayı sağlayan web tabanlı bir araç. Kullanıcı bir CSV veri seti yüklüyor, ön işleme (normalizasyon, one-hot encoding) seçeneklerini ayarlıyor, birden fazla modeli (Perceptron, MLP, Decision Tree) aynı anda eğitip performanslarını karşılaştırabiliyor.</p>
+              <h4>Rolüm</h4>
+              <p>Geliştirmeyi asıl olarak bir ekip arkadaşımla ikimiz yaptık. Önce masaüstü (Tkinter) bir araç olarak başlayan projeyi, daha sonra Streamlit ile web tabanlı bir arayüze taşıdık — model eğitim/karşılaştırma mantığı ve arayüz tasarımı üzerinde birlikte çalıştık.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>Python</span><span>Streamlit</span><span>scikit-learn</span>
+                <span>pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Iris veri setiyle test ettiğimizde MLP ve Decision Tree modelleri %100 doğruluğa ulaştı, doğrusal bir sınıflandırıcı olan Perceptron ise %63'te kaldı. Bu, farklı modellerin ne zaman işe yaradığını teoride değil pratikte görmemi sağladı.</p>
+              <div class="work-accordion-links">
+                <a href="https://github.com/bilgez/ml-classification-toolkit" target="_blank" rel="noopener" class="btn btn-primary">GitHub'da incele →</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">Kadınlara yönelik bir destek platformu — 66 sayfalık tüm frontend'i (hikayeler, blog, forum, paneller) framework kullanmadan tek başıma kurdum.</p>
-        <div class="work-tags">
-          <span class="work-tag">HTML</span>
-          <span class="work-tag">CSS</span>
-          <span class="work-tag">JavaScript</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
 
-         <div class="work-card"
-           data-title="Kütüphane Yönetim Sistemi"
-           data-meta="2025 — Ders Projesi (Ekip) / Full-Stack"
-           data-overview="Bir veritabanı dersi ödevi olarak SQL Server + MongoDB + terminal tabanlı bir Python CLI'yla başlayan proje; kitap ödünç alma/iade, otomatik stok takibi (trigger'lar) ve kitap yorumları içeriyordu. Bu projeyi web tabanlı, görsel bir arayüze taşıdım."
-           data-role="Orijinal CLI + SQL Server + MongoDB tasarımını bir ekip ödevi olarak birlikte yaptık. Web sürümüne taşıma işini (Flask backend, SQLite'a geçiş, orijinal trigger mantığının yeniden kurulması, tüm arayüz tasarımı) tek başıma gerçekleştirdim."
-           data-stack="Python, Flask, SQLite (trigger'larla), Jinja2, kendi yazdığım CSS — orijinal sürüm: SQL Server, MongoDB"
-           data-outcome="Var olan bir veritabanı projesini, mimariyi basitleştirerek ama temel mantığı (otomatik stok güncelleme trigger'ları) koruyarak nasıl daha erişilebilir/gösterilebilir hale getirebileceğimi öğrendim. Katalog arama, kitap detay + yorum/puanlama sistemi ve gecikmiş iade takibi içeriyor."
-           data-link="https://github.com/bilgez/library-management-system"
-           data-images="assets/projects/library/01-katalog.png|assets/projects/library/02-kitap-detay.png|assets/projects/library/03-odunc-kayitlari.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">Kütüphane Yönetim Sistemi</h3>
-          <span class="work-card-meta">2025 — Ders Projesi (Ekip) / Full-Stack</span>
+      <!-- CPU Zamanlama Simülatörü -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">05</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">CPU Zamanlama Simülatörü</h3>
+            <p class="work-accordion-desc">4 algoritmayı canlı karşılaştır</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>C++</span>
+            <span>JavaScript</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/cpu-scheduler/01-anasayfa.png" alt="CPU Scheduler ana sayfa">
+                  <img src="assets/projects/cpu-scheduler/02-tum-algoritmalar.png" alt="Tüm algoritmalar">
+                  <img src="assets/projects/cpu-scheduler/03-turkce.png" alt="Türkçe versiyon">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Ceng305 İşletim Sistemleri dersi için C++ ile yazdığım 4 CPU zamanlama algoritmasını (FCFS, SJF, Round Robin, Priority) sonradan web'e taşıdım. Algoritmaları JavaScript'e yeniden yazarak backend gerektirmeyen, tarayıcıda çalışan, İngilizce/Türkçe dil desteği olan bir versiyon oluşturdum.</p>
+              <h4>Rolüm</h4>
+              <p>İlk sürümü (C++ çekirdek + Python/Tkinter masaüstü arayüz) solo geliştirdim, git ile 25 commit'lik adım adım bir süreçte. Sonrasında algoritmaları JavaScript'e taşıyıp modern bir web arayüzü kurdum ve GitHub Pages üzerinden yayına aldım.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>C++</span><span>Python/Tkinter</span><span>JavaScript</span>
+                <span>HTML/CSS</span><span>GitHub Pages</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Aynı algoritmik problemi iki farklı platformda (masaüstü ve web) uygulamayı, ve zamanla var olan bir projeyi nasıl modernize edebileceğimi deneyimledim. Gantt chart görselleştirmesi ve çoklu algoritma karşılaştırması en çok emek verdiğim kısımlardı.</p>
+              <div class="work-accordion-links">
+                <a href="https://bilgez.github.io/op_project/" target="_blank" rel="noopener" class="btn btn-primary">Canlı projeyi gör →</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">SQL Server + terminal CLI olarak başlayan bir veritabanı ödevini, trigger'ları koruyarak modern bir web arayüzüne taşıdım.</p>
-        <div class="work-tags">
-          <span class="work-tag">Python</span>
-          <span class="work-tag">Flask</span>
-          <span class="work-tag">SQLite</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
 
-         <div class="work-card"
-           data-title="Stok Takip Sistemi"
-           data-meta="Staj Projesi / Full-Stack"
-           data-overview="Stajım sırasında C# WinForms + SQL Server ile geliştirdiğim, malzeme stok takibi ve talep formu kayıtlarını yöneten bir masaüstü uygulamasını, web tabanlı, kurulum gerektirmeyen bir sürüme taşıdım."
-           data-role="Orijinal masaüstü uygulamasını stajda tek başıma geliştirmiştim. Bu web sürümünü de (Flask backend, SQLite'a geçiş, ürün kodu üretme mantığının yeniden tasarlanması, tüm arayüz) tek başıma kurdum."
-           data-stack="Python, Flask, SQLite, Jinja2, kendi yazdığım CSS — orijinal sürüm: C#, WinForms, SQL Server, Excel Interop"
-           data-outcome="Otomatik ürün kodu üretimi, arama/filtreleme ve Excel'e aktarma özelliklerini içeriyor. Var olan bir masaüstü aracını web'e taşırken, orijinal davranışları (büyük harfe otomatik çevirme gibi) nasıl koruyacağımı düşünmek zorunda kaldım."
-           data-link="https://github.com/bilgez/stock-tracking-system"
-           data-images="assets/projects/stock/01-stok-yonetimi.png|assets/projects/stock/02-yeni-kayit.png|assets/projects/stock/03-form-bilgileri.png">
-        <div class="work-card-top">
-          <h3 class="work-card-title">Stok Takip Sistemi</h3>
-          <span class="work-card-meta">Staj Projesi / Full-Stack</span>
+      <!-- NOTALONE -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">06</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">NOTALONE</h3>
+            <p class="work-accordion-desc">Kadınlara yönelik destek platformu</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/notalone/01-stories.png" alt="NOTALONE hikayeler">
+                  <img src="assets/projects/notalone/02-cta-footer.png" alt="NOTALONE footer">
+                  <img src="assets/projects/notalone/03-anasayfa.png" alt="NOTALONE ana sayfa">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Kadınlara yönelik farkındalık ve destek platformu — hikaye paylaşımı, makale/blog sistemi, forum ve kullanıcı/admin panelleri içeren çok sayfalı bir web tasarımı dersi projesi. Ekip arkadaşım backend'i üstlendi, ben tüm frontend'i geliştirdim.</p>
+              <h4>Rolüm</h4>
+              <p>66 sayfalık sitenin tamamının arayüzünü (HTML/CSS/JS) hiçbir framework kullanmadan, elle kurdum — ana sayfa, hikayeler, blog/makale sistemi, forum, kullanıcı ve admin panelleri dahil. Ekip arkadaşım aynı proje üzerinde backend tarafını ayrıca geliştirdi.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript (vanilla)</span>
+                <span>Owl Carousel</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>React ya da benzeri bir kütüphane bilmeden, tamamen elle 66 sayfalık tutarlı bir tasarım dilini (pudra pembe tema, kart sistemleri, modal pencereler) sürdürebilmeyi öğrendim. React öğrenmeden önceki dönemimde yazdığım en kapsamlı frontend projem.</p>
+            </div>
+          </div>
         </div>
-        <p class="work-card-desc">Stajda yazdığım bir WinForms stok takip uygulamasını, otomatik ürün kodlama mantığıyla web'e taşıdım.</p>
-        <div class="work-tags">
-          <span class="work-tag">Python</span>
-          <span class="work-tag">Flask</span>
-          <span class="work-tag">SQLite</span>
-        </div>
-        <span class="work-open">Detayları gör →</span>
       </div>
- 
+
+      <!-- Kütüphane Yönetim Sistemi -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">07</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">Kütüphane Yönetim Sistemi</h3>
+            <p class="work-accordion-desc">Trigger'lı web tabanlı kütüphane sistemi</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/library/01-katalog.png" alt="Kütüphane katalog">
+                  <img src="assets/projects/library/02-kitap-detay.png" alt="Kitap detay">
+                  <img src="assets/projects/library/03-odunc-kayitlari.png" alt="Ödünç kayıtları">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Bir veritabanı dersi ödevi olarak SQL Server + MongoDB + terminal tabanlı bir Python CLI'yla başlayan proje; kitap ödünç alma/iade, otomatik stok takibi (trigger'lar) ve kitap yorumları içeriyordu. Bu projeyi web tabanlı, görsel bir arayüze taşıdım.</p>
+              <h4>Rolüm</h4>
+              <p>Orijinal CLI + SQL Server + MongoDB tasarımını bir ekip ödevi olarak birlikte yaptık. Web sürümüne taşıma işini (Flask backend, SQLite'a geçiş, orijinal trigger mantığının yeniden kurulması, tüm arayüz tasarımı) tek başıma gerçekleştirdim.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>Python</span><span>Flask</span><span>SQLite (trigger'larla)</span>
+                <span>Jinja2</span><span>CSS</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Var olan bir veritabanı projesini, mimariyi basitleştirerek ama temel mantığı (otomatik stok güncelleme trigger'ları) koruyarak nasıl daha erişilebilir/gösterilebilir hale getirebileceğimi öğrendim. Katalog arama, kitap detay + yorum/puanlama sistemi ve gecikmiş iade takibi içeriyor.</p>
+              <div class="work-accordion-links">
+                <a href="https://github.com/bilgez/library-management-system" target="_blank" rel="noopener" class="btn btn-primary">GitHub'da incele →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stok Takip Sistemi -->
+      <div class="work-accordion-item">
+        <button class="work-accordion-header" type="button">
+          <span class="work-item-number">08</span>
+          <div class="work-accordion-info">
+            <h3 class="work-accordion-title">Stok Takip Sistemi</h3>
+            <p class="work-accordion-desc">WinForms uygulamasını web'e taşıdım</p>
+          </div>
+          <div class="work-accordion-tags">
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <span class="work-accordion-arrow">▼</span>
+        </button>
+        <div class="work-accordion-body">
+          <div class="work-accordion-content">
+            <div class="work-accordion-gallery">
+              <div class="work-gallery-slider">
+                <div class="work-gallery-track">
+                  <img src="assets/projects/stock/01-stok-yonetimi.png" alt="Stok yönetimi">
+                  <img src="assets/projects/stock/02-yeni-kayit.png" alt="Yeni kayıt">
+                  <img src="assets/projects/stock/03-form-bilgileri.png" alt="Form bilgileri">
+                </div>
+                <button class="gallery-btn prev" type="button">‹</button>
+                <button class="gallery-btn next" type="button">›</button>
+              </div>
+              <div class="gallery-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="work-accordion-details">
+              <h4>Genel Bakış</h4>
+              <p>Stajım sırasında C# WinForms + SQL Server ile geliştirdiğim, malzeme stok takibi ve talep formu kayıtlarını yöneten bir masaüstü uygulamasını, web tabanlı, kurulum gerektirmeyen bir sürüme taşıdım.</p>
+              <h4>Rolüm</h4>
+              <p>Orijinal masaüstü uygulamasını stajda tek başıma geliştirmiştim. Bu web sürümünü de (Flask backend, SQLite'a geçiş, ürün kodu üretme mantığının yeniden tasarlanması, tüm arayüz) tek başıma kurdum.</p>
+              <h4>Teknolojiler</h4>
+              <div class="work-accordion-tech">
+                <span>Python</span><span>Flask</span><span>SQLite</span>
+                <span>Jinja2</span><span>CSS</span>
+              </div>
+              <h4>Sonuç & Öğrenimler</h4>
+              <p>Otomatik ürün kodu üretimi, arama/filtreleme ve Excel'e aktarma özelliklerini içeriyor. Var olan bir masaüstü aracını web'e taşırken, orijinal davranışları (büyük harfe otomatik çevirme gibi) nasıl koruyacağımı düşünmek zorunda kaldım.</p>
+              <div class="work-accordion-links">
+                <a href="https://github.com/bilgez/stock-tracking-system" target="_blank" rel="noopener" class="btn btn-primary">GitHub'da incele →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
-
-<!-- ============ WORK MODAL ============ -->
-<div class="work-modal-overlay" id="workModalOverlay">
-  <div class="work-modal">
-    <div class="work-modal-head">
-      <button class="work-modal-close" type="button" aria-label="Kapat">✕</button>
-      <h3 class="wm-title" style="font-size:clamp(1.6rem,3vw,2.2rem)"></h3>
-      <p class="wm-meta" style="color:var(--faint);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;margin-top:6px"></p>
-    </div>
-    <div class="work-gallery">
-      <div class="work-gallery-track"></div>
-      <button class="gallery-nav prev" type="button" aria-label="Önceki">←</button>
-      <button class="gallery-nav next" type="button" aria-label="Sonraki">→</button>
-    </div>
-    <div class="gallery-dots" style="margin-inline:clamp(24px,4vw,40px)"></div>
-
-    <div class="work-tabs">
-      <button class="work-tab-btn active" type="button">Genel Bakış</button>
-      <button class="work-tab-btn" type="button">Rol & Teknoloji</button>
-      <button class="work-tab-btn" type="button">Sonuç</button>
-    </div>
-    <div class="work-tab-panel active">
-      <h4>Genel Bakış</h4>
-      <p class="wm-overview"></p>
-      <a href="#" class="btn btn-primary wm-link" target="_blank" rel="noopener">Canlı projeyi gör →</a>
-    </div>
-    <div class="work-tab-panel">
-      <h4>Rol</h4>
-      <p class="wm-role"></p>
-      <h4>Teknolojiler</h4>
-      <p class="wm-stack"></p>
-    </div>
-    <div class="work-tab-panel">
-      <h4>Sonuç & Öğrenimler</h4>
-      <p class="wm-outcome"></p>
-    </div>
-  </div>
-</div>
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="section" id="experience" data-reveal>
   <div class="wrap">
     <p class="eyebrow">Deneyim</p>
     
+    <div class="timeline">
       <div class="timeline-item">
         <span class="timeline-dot"></span>
         <p class="timeline-num">2025 Mart – 2026 Haziran (3 dönem, ~12 ay)</p>
@@ -462,23 +592,6 @@
     </div>
   </div>
 </section>
-
-<!-- ============ CONTACT ============ 
-<section class="section" id="contact" data-reveal>
-  <div class="wrap contact-inner">
-      
-    <p class="eyebrow">İletişim</p>
-    <h2 class="contact-title">Birlikte bir şeyler<br>inşa edelim mi?</h2>
-    <div class="hero-actions">
-      <a href="mailto:bilgezerda.keklik@gmail.com" class="btn btn-primary">E-posta gönder →</a>
-      <div class="social-row">
-        <a href="https://github.com/bilgez" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a href="https://www.linkedin.com/in/bilgezerda" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-</section>-->
-
 
 <footer>
   <span>© 2026 Bilge Zerda Keklik</span>
